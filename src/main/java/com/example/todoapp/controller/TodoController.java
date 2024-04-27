@@ -24,6 +24,7 @@ public class TodoController {
         model.addAttribute("todos",todos);
         return "todos";
     }
+
     @PostMapping("/addTodo")
     public String addTodo(@RequestParam("todo")String todo){
        //db에 저장할 예정.
